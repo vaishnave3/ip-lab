@@ -50,6 +50,15 @@
     a {
         cursor: pointer;
     }
+    .col1 {
+        max-width: 20px;
+    }
+    .col2 {
+        max-width: 10px;
+    }
+    .col3 {
+        padding-left: 100px;
+    }
     </style>
     </head>
 <body>
@@ -68,37 +77,39 @@
     <footer>
         <table>
             <tr>
-                <th colspan="4">Connect</th>
-                <th>Links</th>
-                <th>Newsletter</th>
+                <th colspan="4" class="col1">Connect</th>
+                <th class="col2">Links</th>
+                <th class="col3">Newsletter</th>
             </tr>
             <tr>
-                <td rowspan="2"><img src="./loc.png"></td>
-                <td rowspan="2">Manhattan</td>
-                <td rowspan="2">, Brooklyn</td>
-                <td rowspan="2">, LA</td>
-                <td>Home</td>
+                <td rowspan="2" class="col1"><img src="./loc.png"></td>
+                <td rowspan="2" class="col1">Manhattan</td>
+                <td rowspan="2" class="col1">, Brooklyn</td>
+                <td rowspan="2" class="col1">, LA</td>
+                <td class="col2">Home</td>
                 <td rowspan="2">
-                    <label for="email">Email : </label>
-                    <input type="email" placeholder="Your email id here">
+                    <div class="col3">
+                        <label for="email">Email : </label>
+                        <input type="email" placeholder="Your email id here">
+                    </div>
                 </td>
             </tr>
             <tr>
-                <td>Team</td>
+                <td class="col2">Team</td>
             </tr>
             <tr>
-                <td rowspan="3"><a><img src="./fb.png"></a></td>
-                <td rowspan="3"><a><img src="./insta.png"></a></td>
-                <td rowspan="3"><a><img src="./link.png"></a></td>                
-                <td rowspan="3"><a><img src="./twitter.png"></a></td>                
+                <td rowspan="3" class="col1"><a><img src="./link.png"></a></td>                
+                <td rowspan="3" class="col1"><a><img src="./fb.png"></a></td>
+                <td rowspan="3" class="col1"><a><img src="./twitter.png"></a></td>                
+                <td rowspan="3" class="col1"><a><img src="./insta.png"></a></td>
 
             </tr>
             <tr>
-                <td>Blogs</td>
-                <td rowspan="2"><button>Subscribe</button></td>
+                <td class="col2">Blogs</td>
+                <td rowspan="2" class="col3"><button>Subscribe</button></td>
             </tr>
             <tr>
-                <td>Support</td>
+                <td class="col2">Support</td>
             </tr>
         </table>
     </footer>

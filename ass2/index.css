@@ -1,0 +1,249 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10px 10;
+    margin: 0 35px;
+}
+
+nav {
+    background-color: rgb(24,24,24);
+    color: white;
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    opacity: 80%;
+}
+
+nav .navEl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+nav img {
+    position: relative;
+    left: 580px;
+    top: 2px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.titles ul li {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 14px;
+}
+
+.store .main-text1 {
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px;
+    max-width: 500px;
+    margin: auto auto;
+    color: grey;
+}
+
+.store .main-text2 {
+    /* text-align: center; */
+    margin-bottom: 15px;
+    margin-left: 480px;
+}
+
+.list-titles {
+    display: flex;
+    margin-left: 480px;
+    list-style-type: none;
+}
+
+.list-titles li {
+    /* display: flex; */
+    text-align: left;
+    font-size: x-small;
+    background-color: rgb(14, 13, 13);
+    color: rgb(202, 189, 189);
+    width: 400px;
+    border-radius: 10px;
+    height: 400px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.list-titles li:hover {
+    width: 420px;
+    height: 420px;
+    transition: width 2s height 2s;
+}
+
+.list-titles {
+    text-decoration: none;
+    overflow-x: auto;
+}
+
+.store-front {
+    background-color: rgb(245,245,247);
+} 
+
+.list-titles img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 35px;
+} 
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+.list-titles a {
+    cursor: pointer;
+}
+
+#movies-title {
+    margin-left: 30%;
+    margin-top: 50px;
+    color: rgb(63, 60, 60);
+}
+
+.marquee {
+    animation: animate 2s linear;
+}
+
+@keyframes animate {
+    100% {
+        transform: translate(100px, 0);
+    }
+    75% {
+        transform: translate(-100px, 0);
+    }
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 350px;
+    perspective: 1000px;
+    margin-top: 20px;
+    margin-left: 250px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-back h5 {
+    margin: 10px;
+}
+  
+.flip-card-back {
+    background-color: rgb(118, 112, 112);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.outers-movies {
+    display: flex;
+    margin-left: 15px;
+}
+
+.outers-movies img {
+    border-radius: 15px;
+}
+
+.series-img img {
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#series-title-img {
+    width: 100%;
+    padding: 1%;
+}
+
+#series-title-card {
+    position: relative;
+    top: 25%;
+    font-size: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    background-color: black;
+}
+
+#series-title-card2 {
+    font-family: sans-serif;
+    position: relative;
+    top: 30%;
+    font-size: 25px;
+    left: 34%;
+}
+
+.series-title-div {
+    background-color: black;
+    color: white;
+    height: 400px;
+}
+
+.marquee-series ul {
+    display: flex;
+    overflow-x: auto;
+}
+
+.marquee-series li {
+    flex-shrink: 0;
+}
+
+.series-img {
+    animation: scrolling 10s linear infinite;
+    width: 80vw;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translate(80vw);
+    }
+    100% {
+        transform: translate(-180vw);
+    }
+}

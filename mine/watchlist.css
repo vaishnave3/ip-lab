@@ -1,0 +1,74 @@
+@import "index.css";
+
+/* table, td, tr {
+    border: 1px solid black; */
+    /* border-collapse: collapse;
+} */
+
+.movies-details td, tr {
+    border: none;
+}
+
+table img {
+    width: 170px;
+    height: 220px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 1000px;
+    height: 800px;
+    min-width: max-content;
+    margin: 0 auto;
+    border-spacing: 15px 15px;
+    table-layout: fixed;   
+}
+
+table img:hover {
+    width: 200px;
+    height: 250px;
+    transform: scale(1.1);
+}
+
+.headerBtn {
+    display: flex;
+}
+
+.headerBtn button {
+    font-size: 17px;
+    width: 95px;
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: rgb(70, 70, 70);
+    border-radius: 4px;
+    padding: .75rem;
+    box-shadow: 0 2px 15px 0 rgb(0, 0, 0, .4);
+    display: none;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}

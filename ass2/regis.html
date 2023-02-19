@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        body {
-            /* background-image: url("./images/regis/bg.png");
-            background-repeat: no-repeat;
-            background-size: cover; */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -20,54 +13,48 @@
             <div class="container">
                 <div class="navEl">
                     <div>
-                        <img src="./logo.png">
+                        <a href="index.html"><img src="./logoFinal.png"></a>
                     </div>
                     <div class="titles">
                         <ul>
-                            <li><a href="store.html" target="_blank">Store</a></li>
-                            <li><a href="movies.html" target="_blank">Movies</a></li>
-                            <li><a href="series.html" target="_blank">Series</a></li>
-                            <li><a href="wishlist.html" target="_blank">Wishlist</a></li>
-                            <li><a href="regis.html" target="_blank">Registration</a></li>
-                            <li><a href="core.html" target="_blank">Core Team</a></li>
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="movies.html">Movies</a></li>
+                            <li><a href="series.html">Series</a></li>
+                            <li><a href="Watchlist.html">Watchlist</a></li>
+                            <li><a href="regis.html">Registration</a></li>
                         </ul>
                     </div>
-                    <div></div>
                 </div>
             </div>
         </nav>
     </header>
-
     <div class="form-wrap">
-        <form action="">
-            <div class="starter-text">
-                <h1>Go ahead, register for the world's greatest movie-con ever.</h1>
-            </div>
-           
-            <div class="form-details">
-                <div class="name-details">
-                    <label for="movie-name">First Name </label>
-                    <input type="text" id="movie-name">
-                    <label for="movie-name">Last Name </label>
-                    <input type="text" id="movie-name">
-                </div>
-                <label for="movie-rating">Rating </label>
-                <input type="number" id="movie-rating">
-            </div><br>
-            <div class="form-genre">
-                <label for="movie-genre">Genre </label> <br>
-                <div class="checks">
-                    <label for="movie-genre">Drama</label>
-                    <input type="checkbox" id="movie-drama">
-                    <label for="movie-genre">Comedy</label>
-                    <input type="checkbox" id="movie-comedy">
-                    <label for="movie-genre">Horror</label>
-                    <input type="checkbox" id="movie-horror">
-                    <label for="movie-genre">Thriller</label>
-                    <input type="checkbox" id="movie-thriller">
-                </div>
-            </div>
-        </form>
-    </form>
+        <h1>Sign up for the coolest movie-con of all time.</h1>
+        <div class="form-details">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <input type="text" id="email" placeholder="Email Address" required>
+            <input type="password" id="password1" placeholder="Password" required>
+            <input type="password" id="password1" placeholder="Confirm Password" required> <br>
+            <label for="movie-genres">Your favourite genre</label>
+            <select name="movie-genres" id="movie-genres">
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="thriller">Thriller</option>
+                <option value="romance">Romance</option>
+                <option value="horror">Horror</option>
+            </select>
+        </div>
+        <div class="terms">
+            <input type="checkbox" id="tnc">
+            <label for="tnc">Accept <a href="">terms and conditions</a></label><br> <br>
+            <button class="registerBtn">Register</button>
+        </div>
+        <div class="oauth-regis">
+
+        </div>
+    </div>
 </body>
 </html>
+
+<!-- add js to toggle password visibility -->

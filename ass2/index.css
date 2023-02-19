@@ -21,8 +21,8 @@ nav {
 
 nav .navEl {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    left: 30%;
 }
 
 nav li {
@@ -42,6 +42,11 @@ nav img {
     top: 2px;
     max-width: 20px;
     max-height: 20px;
+}
+
+video {
+    object-fit: cover;
+    height: 800px;
 }
 
 .titles ul li {
@@ -227,15 +232,16 @@ nav img {
 
 .marquee-series ul {
     display: flex;
-    overflow-x: auto;
+    list-style: none;
 }
 
 .marquee-series li {
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .series-img {
-    animation: scrolling 10s linear infinite;
+    animation: scrolling 20s linear infinite;
     width: 80vw;
 }
 
@@ -251,72 +257,73 @@ nav img {
 .form-wrap {
     width: 600px;
     height: 800px;
+    padding: 2%;
     background-color: rgb(24,24,24);
     opacity: 50%;
-    position: relative;
     margin: auto;
     margin-top: 40px;
     box-shadow: 0 0 30px black;
     border-radius: 5px;
-    color: rgb(153, 24, 24);
+    color: rgb(224, 221, 221);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica', sans-serif;
 }
 
-.starter-text {
-    position: relative;
-    left: 30px;
-    top: 10px;
-    color: rgb(185, 177, 177)
-}
-
 .form-details {
-    display: grid;
     position: relative;
-    /* max-width: fit-content; */
-    /* left: 30px;
-    top: 50px; */
-    align-items: center;
-    color: rgb(185, 177, 177);
-    font-size: 20px;
-}
-
-.form-details * {
-    margin-top: 15px;
+    top: 20px;
+    display: grid;
+    row-gap: 10px;
 }
 
 .form-details input {
-    height: 25px;
-    /* width: 400px; */
-    opacity: 35%;
-    border-radius: 7px;
-    box-shadow: 0 0 3px rgb(255, 166, 0);
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 18px;
 }
 
-.form-genre {
-    position: relative;
-    max-width: fit-content;
-    left: 30px;
-    top: 50px;
-    align-items: center;
-    color: rgb(185, 177, 177);
+.form-details input:valid {
+    font-size: 25x;
+    background-color: black;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.form-details input:focus {
+    border: 80px;
+    background-color: black;
     font-size: 20px;
 }
 
-.checks {
-    font-size: 15px;
+.terms {
     position: relative;
-    top: 10px;
+    top: 50px;
 }
 
-.movie-genre {
-    margin-left: 10px;
+.terms a {
+    text-decoration: none;
+    color: rgb(120, 152, 206);
 }
 
-.name-details {
-    display: flex;
-    max-width: fit-content;
+.terms button {
+    border-radius: 20px;
+    width: 200px; 
+    height: 40px;
+    margin: 0 auto; 
+    display: block;
+    background-color: rgb(118, 112, 112);
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
-#movie-name {
-    font-size: 15px;
+#movie-genres {
+    border-radius: 10px;
 }
